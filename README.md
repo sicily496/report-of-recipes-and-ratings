@@ -33,6 +33,6 @@ So, we ploted the distribution of minutes again without outliers.
 
 
 Second, we focused on the column 'rating' distribution:
-<iframe src="assets/rating_minutes.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/rating.html" width=400 height=300 frameBorder=0></iframe>
 
 ### Bivariate Anallysis
