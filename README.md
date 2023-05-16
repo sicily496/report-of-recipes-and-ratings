@@ -1,4 +1,4 @@
-# Report of Recipes and Ratings
+# Recipes and Ratings Report
 
 by Christine Wu (chw081@ucsd.edu) and Zhiqing Wang (zhw055@ucsd.edu)
 
@@ -21,10 +21,18 @@ Step 1: combine two Datasets to one table with more information: with 234429 row
 Step 2: create a column for average cooking time of each recipes to provide potential information: with 234429 rows × 17 columns
 Step 3: seperate nutrition column to be easier for : with 234429 rows × 23 columns
 
-After general cleaning, we focused on our question ('rate' and 'minutes' columns)
+After general cleaning, we focused back on our question ('rate' and 'minutes' columns)
 
+### Univariate Analysis
 First, we focused on the column 'minutes' distribution:
-<iframe src="assets/raw_minutes.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/raw_minutes.html" width=400 height=300 frameBorder=0></iframe>
 The above figure doesn't show any trend well, which is largely because of outliers. 
-So, we ploted the distribution of minutes again without outliers.
 
+So, we ploted the distribution of minutes again without outliers.
+<iframe src="assets/cleaned_minutes.html" width=400 height=300 frameBorder=0></iframe>
+
+
+Second, we focused on the column 'rating' distribution:
+<iframe src="assets/rating_minutes.html" width=400 height=300 frameBorder=0></iframe>
+
+### Bivariate Anallysis
