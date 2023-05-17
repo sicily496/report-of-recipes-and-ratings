@@ -43,10 +43,10 @@ Second, we focused on the column 'rating' distribution:
 
 ### Bivariate Analysis
 The relationship between 'rating' and 'minutes' in boxplot:
-<iframe src="assets/BA1.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/BA1.html" width=500 height=400 frameBorder=0></iframe>
 
 The relationship between 'rating' and 'minutes' in scatterplot:
-<iframe src="assets/BA2.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/BA2.html" width=500 height=400 frameBorder=0></iframe>
 
 ## Assessment of Missingness
  The distribution of column 'minutes' when column 'rating' is missing and the distribution of column 'minutes' when column 'rating' is not missing:
