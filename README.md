@@ -43,6 +43,16 @@ Second, we focused on the column 'rating' distribution:
 ### Bivariate Anallysis
 
 ## Assessment of Missingness
-<iframe src="assets/min_mis_rate.html" width=800 height=600 frameBorder=0></iframe>
+ The distribution of column 'minutes' when column 'rating' is missing and the distribution of column 'minutes' when column 'rating' is not missing:
+<iframe src="assets/min_miss_rate.html" width=400 height=300 frameBorder=0></iframe>
+
+The empirical distribution of the absolution difference in minutes means of permutation tests with the absolution difference in minutes means:
+<iframe src="assets/ED_min_mean.html" width=400 height=300 frameBorder=0></iframe>
+
+ The distribution of column 'sub_day', day of the month for date that recipe was submitted, when column 'rating' is missing and the distribution of column 'sub_day' when column 'rating' is not missing:
+<iframe src="assets/sub_day_miss_rate.html" width=400 height=300 frameBorder=0></iframe>
+
+The empirical distribution of the absolution difference in day means of permutation tests with the absolution difference in day means:
+<iframe src="assets/ED_day_mean.html" width=400 height=300 frameBorder=0></iframe>
 
 ## Hypothesis Testing
