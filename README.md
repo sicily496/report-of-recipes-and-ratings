@@ -10,9 +10,10 @@ In this project, we studied some recipes' data based on two raw data sets: RAW_r
 We focused on the question: **What is the relationship between the cooking time and rating of recipes?**
 The importance of this question is to know if the cooking time potentially influences people's preferences through observation of rating and also if the time taken by the user is related to their ratings.
 There are 234429 rows in the dataset.
-Based on the question, we mainly focus on two columns: 'rating' and 'minutes'. <br>
+Based on the question, we mainly focus on two columns: 'rating', 'minutes', and 'sub_day'. <br>
 **'rating'**: Recipe rating given by user <br>
-**'minutes'**: Minutes to prepare recipe
+**'minutes'**: Minutes to prepare recipe <br>
+**'sub_day'**: Day of the month for date that recipe was submitted
 
 ---
 
