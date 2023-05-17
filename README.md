@@ -41,7 +41,12 @@ So, we ploted the distribution of minutes again without outliers.
 Second, we focused on the column 'rating' distribution:
 <iframe src="assets/rating.html" width=400 height=300 frameBorder=0></iframe>
 
-### Bivariate Anallysis
+### Bivariate Analysis
+The relationship between 'rating' and 'minutes' in boxplot:
+<iframe src="assets/BA1.html" width=400 height=300 frameBorder=0></iframe>
+
+The relationship between 'rating' and 'minutes' in scatterplot:
+<iframe src="assets/BA2.html" width=400 height=300 frameBorder=0></iframe>
 
 ## Assessment of Missingness
  The distribution of column 'minutes' when column 'rating' is missing and the distribution of column 'minutes' when column 'rating' is not missing:
