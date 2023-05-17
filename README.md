@@ -40,11 +40,9 @@ So, we ploted the distribution of minutes again without outliers.
 Second, we focused on the column 'rating' distribution:
 <iframe src="assets/rating.html" width=400 height=300 frameBorder=0></iframe>
 
-
-<iframe src="assets/file-name.html" width=800 height=600 frameBorder=0></iframe>
-
 ### Bivariate Anallysis
 
 ## Assessment of Missingness
+<iframe src="assets/min_mis_rate.html" width=800 height=600 frameBorder=0></iframe>
 
 ## Hypothesis Testing
