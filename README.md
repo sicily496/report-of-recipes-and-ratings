@@ -15,10 +15,6 @@ Based on the question, we mainly focus on two columns: 'rating', 'minutes', and 
 **'minutes'**: Minutes to prepare recipe <br>
 **'sub_day'**: Day of the month for date that recipe was submitted
 
-```py
-print(df.head().to_markdown(index=False))
-```
-
 ---
 
 ## Cleaning and EDA
@@ -30,6 +26,14 @@ Step 1: combine two Datasets to one table with more information: with 234429 row
 Step 2: create a column for average cooking time of each recipes to provide potential information: with 234429 rows × 17 columns  <br>
 Step 3: seperate nutrition column to be easier for accessing data in float values individually and for missingness dependency test: with 234429 rows × 23 columns  <br>
 Step 4: seperate submitted column to be easier for accessing data in numberical (int) values individually and for missingness dependency test: with 234429 rows × 25 columns  <br>
+
+|rating|minutes|sub_day|
+| --- | --- | --- |
+| 4 | 40 | 27 |
+| 5 | 45 | 11 |
+| 5 | 40 | 30 |
+| 5 | 40 | 30 |
+| 5 | 40 | 30 |
 
 After general cleaning, we focused back on our question ('rate' and 'minutes' columns)
 
