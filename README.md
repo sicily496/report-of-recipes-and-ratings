@@ -54,10 +54,23 @@ The graph is skewed heavily to the left. We see most data are gathered at a rati
 ### Bivariate Analysis
 The relationship between 'rating' and 'minutes' in boxplot:
 <iframe src="assets/BA1.html" width=500 height=400 frameBorder=0></iframe>
-
+For each group of rating, we see the boxplot is generally skewed to the right. There are no outliers on the lower bounds while multiple outliers exists above the upper bound.
 
 The relationship between 'rating' and 'minutes' in scatterplot:
 <iframe src="assets/BA2.html" width=500 height=400 frameBorder=0></iframe>
+This figure shows the data is more likely skewed to the right since the scattered data points are more clustered on the lower end. We see that for all group of rating, the longest time is 120 minutes.<br>
+
+### Interesting Aggregates
+
+|rating | minutes|
+| --- | --- |
+|1.0 | 38.717320|
+|2.0 | 39.630958 |
+|3.0 | 38.088193 |
+|4.0 | 36.474287 |
+|5.0 | 36.364948 |
+
+This shows the mean of minutes grouped by rating. The dataframe gives insights on comparing mean differences of the cooking time for ratings from 1 to 5. It helps us to see people might prefer recipes that take less time and rate them higher compared to longer time.
 
 ## Assessment of Missingness
  The distribution of column 'minutes' when column 'rating' is missing and the distribution of column 'minutes' when column 'rating' is not missing:
