@@ -21,7 +21,7 @@ Based on the question, we mainly focus on two columns: 'rating', 'minutes', and 
 
 Before analyzing the data, the raw data needs to be processed first。
 
-Genernal Cleaning:
+### Data Cleaning
 Step 1: combine two Datasets to one table with more information: with 234429 rows × 16 columns <br>
 Step 2: create a column for average cooking time of each recipes to provide potential information: with 234429 rows × 17 columns  <br>
 Step 3: seperate nutrition column to be easier for accessing data in float values individually and for missingness dependency test: with 234429 rows × 23 columns  <br>
@@ -73,6 +73,11 @@ This figure shows the data is more likely skewed to the right since the scattere
 This shows the mean of minutes grouped by rating. The dataframe gives insights on comparing mean differences of the cooking time for ratings from 1 to 5. It helps us to see people might prefer recipes that take less time and rate them higher compared to longer time.
 
 ## Assessment of Missingness
+
+### NMAR Analysis
+
+### Missingness Dependency
+
  The distribution of column 'minutes' when column 'rating' is missing and the distribution of column 'minutes' when column 'rating' is not missing:
 <iframe src="assets/min_miss_rate.html" width=500 height=300 frameBorder=0></iframe>
 
