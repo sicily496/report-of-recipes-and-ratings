@@ -1,4 +1,4 @@
-# Recipes and Ratings Report
+# Savor and Score: Recipes and Ratings Report
 
 by Christine Wu (chw081@ucsd.edu) and Zhiqing Wang (zhw055@ucsd.edu)
 
@@ -15,6 +15,10 @@ Based on the question, we mainly focus on two columns: 'rating', 'minutes', and 
 **'minutes'**: Minutes to prepare recipe <br>
 **'sub_day'**: Day of the month for date that recipe was submitted
 
+```py
+print(df.head().to_markdown(index=False))
+```
+
 ---
 
 ## Cleaning and EDA
@@ -22,10 +26,10 @@ Based on the question, we mainly focus on two columns: 'rating', 'minutes', and 
 Before analyzing the data, the raw data needs to be processed first。
 
 Genernal Cleaning:
-Step 1: combine two Datasets to one table with more information: with 234429 rows × 16 columns <br />
-Step 2: create a column for average cooking time of each recipes to provide potential information: with 234429 rows × 17 columns  <br />
-Step 3: seperate nutrition column to be easier for : with 234429 rows × 23 columns  <br />
-Step 4: seperate submitted column to be easier for : with 234429 rows × 26 columns  <br />
+Step 1: combine two Datasets to one table with more information: with 234429 rows × 16 columns <br>
+Step 2: create a column for average cooking time of each recipes to provide potential information: with 234429 rows × 17 columns  <br>
+Step 3: seperate nutrition column to be easier for accessing data in float values individually and for missingness dependency test: with 234429 rows × 23 columns  <br>
+Step 4: seperate submitted column to be easier for accessing data in numberical (int) values individually and for missingness dependency test: with 234429 rows × 25 columns  <br>
 
 After general cleaning, we focused back on our question ('rate' and 'minutes' columns)
 
