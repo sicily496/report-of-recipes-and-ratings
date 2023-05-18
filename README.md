@@ -44,14 +44,17 @@ The above figure doesn't show any trend well, which is largely because of outlie
 
 So, we ploted the distribution of minutes again without outliers.
 <iframe src="assets/cleaned_minutes.html" width=400 height=300 frameBorder=0></iframe>
+From the above figure, we find there are more values on multiples of 5, like 5, 10, 15...Also, the graph is skewed to the right.
 
 
 Second, we focused on the column 'rating' distribution:
 <iframe src="assets/rating.html" width=400 height=300 frameBorder=0></iframe>
+The graph is skewed heavily to the left. We see most data are gathered at a rating of 5 and the density probability increases as the rating increases.
 
 ### Bivariate Analysis
 The relationship between 'rating' and 'minutes' in boxplot:
 <iframe src="assets/BA1.html" width=500 height=400 frameBorder=0></iframe>
+
 
 The relationship between 'rating' and 'minutes' in scatterplot:
 <iframe src="assets/BA2.html" width=500 height=400 frameBorder=0></iframe>
