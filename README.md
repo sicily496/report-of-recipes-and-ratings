@@ -27,21 +27,13 @@ Step 2: create a column for average cooking time of each recipes to provide pote
 Step 3: seperate nutrition column to be easier for accessing data in float values individually and for missingness dependency test: with 234429 rows × 23 columns  <br>
 Step 4: seperate submitted column to be easier for accessing data in numberical (int) values individually and for missingness dependency test: with 234429 rows × 25 columns  <br>
 
-| |name | minutes | contributor_id |
-|--- | --- | --- | --- |
-|0 | 1 brownies in the world best ever | 40 | 985201 | 
-|1 | 1 in canada chocolate chip cookies | 45 | 1848091 |
-2                             412 broccoli casserole       40           50969   
-3                             412 broccoli casserole       40           50969   
-4                             412 broccoli casserole       40           50969 
-
-|rating|minutes|sub_day|
-| --- | --- | --- |
-| 4 | 40 | 27 |
-| 5 | 45 | 11 |
-| 5 | 40 | 30 |
-| 5 | 40 | 30 |
-| 5 | 40 | 30 |
+| |name | minutes | contributor_id | ... |rating|minutes|sub_day|
+|--- | --- | --- | --- | --- | --- | --- | --- |
+|0 | 1 brownies in the world best ever | 40 | 985201 | ... | 4 | 40 | 27 |
+|1 | 1 in canada chocolate chip cookies | 45 | 1848091 | ... | 5 | 45 | 11 |
+|2 | 412 broccoli casserole | 40 | 50969 | ... | 5 | 40 | 30 |
+|3 | 412 broccoli casserole | 40 | 50969 | ... | 5 | 40 | 30 |
+|4 | 412 broccoli casserole | 40 | 50969 | ... | 5 | 40 | 30 |
 
 After general cleaning, we focused back on our question ('rate' and 'minutes' columns)
 
