@@ -40,8 +40,7 @@ After general cleaning, we focused back on our question ('rate' and 'minutes' co
 ### Univariate Analysis
 First, we focused on the column 'minutes' distribution:
 <iframe src="assets/raw_minutes.html" width=400 height=300 frameBorder=0></iframe>
-The above figure doesn't show any trend well, which is largely because of outliers. 
-
+The above figure doesn't show any trend well, which is largely because of outliers. <br>
 So, we ploted the distribution of minutes again without outliers.
 <iframe src="assets/cleaned_minutes.html" width=400 height=300 frameBorder=0></iframe>
 From the above figure, we find there are more values on multiples of 5, like 5, 10, 15...Also, the graph is skewed to the right.
