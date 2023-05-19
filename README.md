@@ -27,6 +27,14 @@ Step 2: create a column for average cooking time of each recipes to provide pote
 Step 3: seperate nutrition column to be easier for accessing data in float values individually and for missingness dependency test: with 234429 rows × 23 columns  <br>
 Step 4: seperate submitted column to be easier for accessing data in numberical (int) values individually and for missingness dependency test: with 234429 rows × 25 columns  <br>
 
+| |name | minutes | contributor_id |
+|--- | --- | --- | --- |
+|0 | 1 brownies in the world best ever | 40 | 985201 | 
+|1 | 1 in canada chocolate chip cookies | 45 | 1848091 |
+2                             412 broccoli casserole       40           50969   
+3                             412 broccoli casserole       40           50969   
+4                             412 broccoli casserole       40           50969 
+
 |rating|minutes|sub_day|
 | --- | --- | --- |
 | 4 | 40 | 27 |
@@ -76,6 +84,7 @@ This shows the mean of minutes grouped by rating. The dataframe gives insights o
 
 ### NMAR Analysis
 There exists a column **'name'**, the recipe name, that is **NMAR**. The missingness of the recipe name is dependent on itself because it is likely that the name depends on whether the user knows the recipe name or if the recipe has a name, which means if the recipe doesn't have a name, the value for column 'name' likely to be missing. Another column 'recipe_name_exist' could be used to check if the name for recipe exists or not.
+NOT NMAR. People usually submit their scores casually after finishing the dishes, and this score has no impact on the submitters. Therefore, the lack of scores is unlikely to be related to one's own numerical value.
 
 ### Missingness Dependency
 
@@ -98,7 +107,7 @@ The missingness of 'rating' column does not depend on the column 'sub_day'. The 
 ## Hypothesis Testing
 To answer our **Sample Question: What is the relationship between the cooking time and rating of recipes?**, we focused on two columns 'minutes' and 'rating'.
 
-### Before Moving to the Hypothesis Testing part - Imputation:
+**Before Moving to the Hypothesis Testing part - Imputation:**
 Because from the above analysis, the missing of rating is related to minutes column, we decided to use Probabilistic imputation to fill in those missing.
 
 
