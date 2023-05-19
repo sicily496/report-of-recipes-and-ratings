@@ -121,6 +121,6 @@ In order to easier compare rating, we seperated rating to two groups first.
 
 Then, we run a permutation test with 500 runs to find distribution under null hypothesis.
 
-<iframe src="assets/fig_hypo.html" width=700 height=400 frameBorder=0></iframe>
+<center><iframe src="assets/fig_hypo.html" width=800 height=400 frameBorder=0></iframe></center>
 
 Conclusion: p_value is **0.0** less than 0.05 (significant level), therefore we **reject the null hypothesis** that recipes whether with higher rating or low one will corresponding to same minutes.
