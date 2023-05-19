@@ -76,7 +76,7 @@ This shows the mean of minutes grouped by rating. The dataframe gives insights o
 
 ### NMAR Analysis
 There exists a column **'name'**, the recipe name, that is **NMAR**. The missingness of the recipe name is dependent on itself because it is likely that the name depends on whether the user knows the recipe name or if the recipe has a name, which means if the recipe doesn't have a name, the value for column 'name' likely to be missing. Another column 'recipe_name_exist' could be used to check if the name for recipe exists or not.
-NOT NMAR. People usually submit their scores casually after finishing the dishes, and this score has no impact on the submitters. Therefore, the lack of scores is unlikely to be related to one's own numerical value.
+NOT NMAR. People usually submit their scores casually after finishing the dishes, and this score has no impact on the submitters. Therefore, the lack of scores is unlikely to be related to one’s own numerical value. The lack of recipes ratings may be related to submitters' online activity, such as adding a column to record the amount of information people post on the website. Some people who are active online are more likely to fill in recipes ratings, while others who do not like or frequently express their opinions online are more likely to not fill in.
 
 ### Missingness Dependency
 
