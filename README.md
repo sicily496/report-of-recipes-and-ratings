@@ -84,7 +84,7 @@ NOT NMAR. People usually submit their scores casually after finishing the dishes
 <iframe src="assets/min_miss_rate.html" width=500 height=300 frameBorder=0></iframe>
 
 The empirical distribution of the absolution difference in minutes means of permutation tests with the absolution difference in minutes means:
-<iframe src="assets/ED_min_mean.html" width=500 height=300 frameBorder=0></iframe>
+<iframe src="assets/ED_min_mean.html" width=700 height=400 frameBorder=0></iframe>
 
 The missingness of 'rating' column does depend on the column 'minutes'. The figure for 'minutes' and 'rating' shows the distributions for cooking time is different when rating is missing and when it is not. When rating value is not missing, we see the distribution is more skewed to the right and there are many outliers above the upper bound compare to no outlier for when rating is missing. Then we see the observed statistic is much higher than the permutation test statistics. With a probability of 0 for getting an absolute difference as extreme as the observed statistic under the assumption that the missingness of 'rating' column does not depend on the column 'minutes', the p-value is 0. The prefered conclusion is the missingness of 'rating' column does depend on the column 'minutes'.
 
@@ -92,7 +92,7 @@ The missingness of 'rating' column does depend on the column 'minutes'. The figu
 <iframe src="assets/sub_day_miss_rate.html" width=500 height=300 frameBorder=0></iframe>
 
 The empirical distribution of the absolution difference in day means of permutation tests with the absolution difference in day means:
-<iframe src="assets/ED_day_mean.html" width=500 height=300 frameBorder=0></iframe>
+<iframe src="assets/ED_day_mean.html" width=700 height=400 frameBorder=0></iframe>
 
 The missingness of 'rating' column does not depend on the column 'sub_day'. The figure for 'sub_day' and 'rating' shows the distributions for the submitted day is roughly similiar. The box plot also shows similiar ranges, median, and quantile values. From the empirical distribution, we see a large proportion of graph on the right side of the observed statistic suggesting the probability of getting an absolute difference value as extreme as the observed statistics is highly possible. By looking at probabilities of the histogram, the p-value is much larger than the significance level of 0.5. The prefered conclusion is the missingness of 'rating' column doesnot depend on the column 'sub_day'.
 
