@@ -94,7 +94,7 @@ The empirical distribution of the absolution difference in day means of permutat
 ## Hypothesis Testing
 To answer our **Sample Question: What is the relationship between the cooking time and rating of recipes?**, we focused on two columns 'minutes' and 'rating'.
 
-### Before Moving to the Hypothesis Testing part - Imputation:
+**Before Moving to the Hypothesis Testing part - Imputation:**
 Because from the above analysis, the missing of rating is related to minutes column, we decided to use Probabilistic imputation to fill in those missing.
 
 
