@@ -75,6 +75,7 @@ This shows the mean of minutes grouped by rating. The dataframe gives insights o
 ## Assessment of Missingness
 
 ### NMAR Analysis
+NOT NMAR. People usually submit their scores casually after finishing the dishes, and this score has no impact on the submitters. Therefore, the lack of scores is unlikely to be related to one's own numerical value.
 
 ### Missingness Dependency
 
@@ -91,4 +92,30 @@ The empirical distribution of the absolution difference in day means of permutat
 <iframe src="assets/ED_day_mean.html" width=500 height=300 frameBorder=0></iframe>
 
 ## Hypothesis Testing
+To answer our **Sample Question: What is the relationship between the cooking time and rating of recipes?**, we focused on two columns 'minutes' and 'rating'.
+
+### Before Moving to the Hypothesis Testing part - Imputation:
+Because from the above analysis, the missing of rating is related to minutes column, we decided to use Probabilistic imputation to fill in those missing.
+
+
+### Hypothesis Testing: Permutation Test (one-tail)
+
+**Null Hypothesis**: both low rating and high rating recipes corresponding to same minutes (draw from same population)
+
+**Alternative Hypothesis**: recipes with higher rating corresponding to lower minutes (one-tail)
+
+**Test statistic**: the different of the mean of minutes - to compare 2 numerical columns
+
+**Significance Level** : 0.05 - conventional
+
+(we choose one-tail test because it is reasonal to think that popular recipes (or with high rate) corresponding to lower time to cook)
+
+In order to easier compare rating, we seperated rating to two groups first.
+1. rating 1-3 as low rate (as **False** in high_rate column)
+2. rating 4-5 as high rate (as **True** in high_rate column
+
+Then, we run a permutation test with 500 runs to find distribution under null hypothesis.
+
 <iframe src="assets/fig_hypo.html" width=500 height=300 frameBorder=0></iframe>
+
+Conclusion: p_value is **0.0** less than 0.05 (significant level), therefore we **reject the null hypothesis** that recipes whether with higher rating or low one will corresponding to same minutes.
